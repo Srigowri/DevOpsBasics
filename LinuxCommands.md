@@ -7,12 +7,14 @@ mkdir MEALS
 cd MEALS
 touch Week{1..52}.txt
 ```
-**2. Find the text files that were modified less than 20 minutes ago**
+**2. Find the text files that were modified less than 60 minutes ago and more than 15 minutes ago**
 ```
 iname for case insensitive
-find . -type f -iname "*.txt" -mmin -20
+find . -type f -iname "*.txt" -mmin -60 -mmin +15
 ```
-**3: Find the directorys that were modified more than 15 minutes ago**
+**3: Delete all files with '.xxx' extension
 ```
-find -type d -mmin +15
+find . -type f -iname '*.xxx' -exec rm -rf {} + 
 ```
+other options: -size(filesize), -perm(for permission), -mtime (for days), -maxdepth
+
