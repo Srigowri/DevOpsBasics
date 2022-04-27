@@ -1,8 +1,9 @@
 All the history is maintained in the hidden directory .git which is created when you do "git init"
 
 Making contribution to Open Source
-1. Fork the project 
+1. Fork an open-source project into your repo 
 2. git clone <url>
+  
   By default the URL is referred by origin and the branch is main
 3. Do not make changes directly to your main branch, create a branch
   git branch gowri-feature    
@@ -14,7 +15,7 @@ Making contribution to Open Source
   git commit -m "adding emotional support"    
 5. Push the changes to the branch    
   git push origin gowri-feature    
-The maintainer of the upstream repository (the repository you forked it from will receive a pull request). He can manually check the commits and merge to the main branch of the repository
+The maintainer of the upstream repository (the repository you forked it from, will receive a pull request). He can manually check the commits and merge to the main branch of the repository
 [I can delete certain commits by resetting to one of the hash values]
   git logs    
   git reset <hashvalue>    
@@ -23,7 +24,7 @@ The maintainer of the upstream repository (the repository you forked it from wil
 6. Once the upstream repo is updated with your commits, your own main branch is behind in those commits.    
   You can either fetch upstream which will pull the changes from upstream or you can do the following commands:    
   git checkout main     
-  git status [you will see not fresh status, but don't be fooled. Your main branch is behind the upstream commits]    
+  git status [you will not see fresh status, but don't be fooled. Your main branch is behind the upstream commits]    
   git fetch --all --prune    
   [prune will get even the deleted commits]    
   git reset --hard upstream/main    
@@ -34,7 +35,7 @@ The maintainer of the upstream repository (the repository you forked it from wil
 7. git push origin master (you got to update your main)
   -------------------------------
   ```
-  git init 	
+git init 	
 git add .
 git status
 git commit -m "message"
