@@ -34,6 +34,7 @@ docker run -p <host_port>:<container_port> --name <container_name> <image_id>:[t
 ```
 docker logs <container_id>
 docker logs <container_name>
+docker logs <container_name> --since 60m
 ```
 9. Networks
 Containers within the same network can communicate with just using the name of the containers.
