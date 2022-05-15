@@ -5,14 +5,17 @@ Making contribution to Open Source
 2. git clone <url>
   
   By default the URL is referred by origin and the branch is main
+  
 3. Do not make changes directly to your main branch, create a branch
   git branch gowri-feature    
   git checkout gowri-feature     
   (same as git checkout -b gowri-feature)    
   The head now points to this branch
+  
 4. Make the developments you want, add changes or updates
   git add .    
-  git commit -m "adding emotional support"    
+  git commit -m "adding emotional support"  
+  
 5. Push the changes to the branch    
   git push origin gowri-feature    
 The maintainer of the upstream repository (the repository you forked it from, will receive a pull request). He can manually check the commits and merge to the main branch of the repository
