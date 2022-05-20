@@ -13,6 +13,7 @@ Making contribution to Open Source
   The head now points to this branch
   
 4. Make the developments you want, add changes or updates
+  
   git add .    
   git commit -m "adding emotional support"  
   
