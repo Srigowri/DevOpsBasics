@@ -7,7 +7,7 @@ Making contribution to Open Source
   By default the URL is referred by origin and the branch is main
   
 3. Do not make changes directly to your main branch, create a branch
-  git branch gowri-feature    
+  git branch -b gowri-feature    
   git checkout gowri-feature     
   (same as git checkout -b gowri-feature)    
   The head now points to this branch
@@ -20,6 +20,7 @@ Making contribution to Open Source
   git push origin gowri-feature    
 The maintainer of the upstream repository (the repository you forked it from, will receive a pull request). He can manually check the commits and merge to the main branch of the repository
 [I can delete certain commits by resetting to one of the hash values]
+  
   git logs    
   git reset <hashvalue>    
   git push origin gowri-feature -f    
