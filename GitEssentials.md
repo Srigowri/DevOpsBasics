@@ -7,25 +7,25 @@ Making contribution to Open Source
   By default the URL is referred by origin and the branch is main
   
 3. Do not make changes directly to your main branch, create a branch
+  ```
   git branch -b gowri-feature    
-  git checkout gowri-feature     
+  git checkout gowri-feature   
+  
   (same as git checkout -b gowri-feature)    
+  ```
   The head now points to this branch
   
 4. Make the developments you want, add changes or updates
-  
+  ```
   git add .    
   git commit -m "adding emotional support"  
-  
-5. Push the changes to the branch    
+  ```
+5. Push the changes to the branch   
+  ```
   git push origin gowri-feature    
+  ```  
 The maintainer of the upstream repository (the repository you forked it from, will receive a pull request). He can manually check the commits and merge to the main branch of the repository
-[I can delete certain commits by resetting to one of the hash values]
-  
-  git logs    
-  git reset <hashvalue>    
-  git push origin gowri-feature -f    
-  [you need to force commit]    
+ 
 6. Once the upstream repo is updated with your commits, your own main branch is behind in those commits.    
   You can either fetch upstream which will pull the changes from upstream or you can do the following commands:    
   git checkout main     
@@ -82,3 +82,11 @@ git checkout feature (head is pointing to the feature, any future commits are do
   ```
   --------------------------------
   
+  
+  
+  [I can delete certain commits by resetting to one of the hash values]
+  
+  git logs    
+  git reset <hashvalue>    
+  git push origin gowri-feature -f    
+  [you need to force commit]   
