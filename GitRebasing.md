@@ -32,3 +32,12 @@ Push changes to GitHub
 ```
 git push orign master
 ```
+
+
+```
+When the commit history is different
+git checkout master   
+git branch main master -f    
+git checkout main  
+git push origin main -f 
+```
